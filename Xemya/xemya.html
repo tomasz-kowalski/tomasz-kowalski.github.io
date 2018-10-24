@@ -1,0 +1,178 @@
+<body bgcolor="#002f2f" text="#ffd000" link="#02ff35" vlink="#52A3A3"
+      alink="#b0b0b0">
+  
+<p> <font size="3">Here is a brief version of the story. If you wish a longer
+    version, read <a href="intro.pdf">this</a>.
+
+    <br>
+</font></p>
+<hr>
+<font size="3">
+</font>
+<p><font size="3"><br>
+</font></p>
+<p><font size="3">Consider planet Xemya. On Xemya, just like on Earth,
+there are countries, and believe it or not, it is not unheard of for 
+Xemyans to wage war. There are two neighbouring
+countries on Xemya, called Apollonia and Tysq. Tysq is a
+  major power, Apollonia is not.
+  Other Xemyan powers include Albania (by a strange coincidence
+there is a country called Albania on Xemya), Coqauvin, Ruritania, Sipango,
+and Ammer-Ku. </font></p>
+<font size="3">
+
+</font>
+<p><font size="3"> At some point in troubled Xemya's history, Tysq goes nasty and demands that
+Apollonia hand over to them a spaceport, over which it - Apollonia that is - has
+some sort of dubious half-authority, by way of exercising a mandate of an international
+peace-keeping organisation (whose peace-keeping successes are comparable with
+those of UN on Earth). Tysq's diplomats left
+Apollonians in no doubt that should they fail to meet their demand, bad things
+of the military sort are sure to happen to Apollonia. </font></p>
+<font size="3">
+
+</font>
+<p><font size="3"> This worries Apollonian strategists quite a lot. They are well aware
+of the fact that Apollonia is no match for Tysq, which is quickly growing
+stronger and more aggresive. Not 
+a year has passed since Tysq gave a similar ultimatum to Tscheslavia.
+Under diplomatic pressure, mainly from Albania and Coqauvin,
+Tscheslavia duly complied, yet it was invaded and
+occupied by Tysq. </font></p>
+<font size="3">
+  
+</font>
+<p><font size="3"> Apollonia hastily arranges some alliances, important ones with Albania and
+Coqauvin. Indeed, Albania and Coqauvin propose an alliance themselves,
+stating their unvawering support for Apollonia and encouraging her to stand firm. 
+This gives hope to Apollonian populace, but the strategists are not all that
+optimistic. It is their job to consider worst-case scenarios, and such scenarios
+  are looking grim. To begin with, a great war seems inevitable.
+  There is just too much tension around:
+  
+  </font></p>
+<font size="3">
+</font>
+<ul>
+    <li><font size="3"> Ruritania claims she has a mission to liberate every oppressed Xemyan.
+      To accomplish this worthy goal, she has to conquer the whole planet.
+    </font></li>
+<li><font size="3"> Tysq and Sipango are sworn enemies of Ruritania. They have their
+      own way of making xemyankind evolve into a better species.
+      By force, if neccessary.
+    </font></li>
+<li><font size="3"> Albania, Coqauvin and Ammer-Ku are happy to let everyone else
+    be, as long as they engage in free trade. On their terms. 
+    </font></li>
+<li><font size="3"> Albania and Coqauvin have recently defeated Tysq. She
+    resents it, and is getting ready for revenge.
+    </font></li>
+<li><font size="3"> Resource-hungry Sipango feels suffocated by a blockade imposed by
+      Ammer-Ku and Albania, and needs to do something about it.
+    </font></li>
+<li><font size="3"> Finally, both Tysq and Ruritania seem to be convinced, each for
+      different reasons, that Xemya without the nuisance of Apollonia would
+      be a better Xemya.   
+  </font></li></ul>
+<font size="3">
+
+</font>
+<p><font size="3"> Against this pleasant background, Apollonia's strategists set out to
+  work. The question is: accept or reject?
+
+</font></p>
+<font size="3">
+</font>
+<p><font size="3"> Acceptance means surrender. But at this cost Apollonia could perhaps avoid an immediate
+  and disastrous war. <i>Perhaps</i>, because Tysq's real intentions may not be as
+  minimalistic as the ultimatum suggests. 
+
+</font></p>
+<font size="3">
+</font>
+<p><font size="3"> Rejection 
+  means war. But an alliance of Apollonia, Albania and Coqauvin
+  theoretically has enough power to defeat Tysq. <i>Theoretically</i>, because
+  military alliances on Xemya have an unpleasant tendency to be unreliable
+  and unstable.
+</font></p>
+<font size="3">
+  
+
+</font>
+<p><font size="3"> What to do? Where conventional wisdom fails, unconventional wisdom
+  is available, in the form of an oracle. To the oracle the strategists
+    go.
+
+
+<form name="estimate" action="" onsubmit="estim(); return false">
+There is the usual fuss at the beginning. Oracles have to live, too, so a little donation is always welcome, but then the oracle accepts the enquiry and falls into trance. 
+She emerges with two questions:
+<p>
+
+<table class="form">
+  <tr>
+    <td><i><b>How likely do you think it is that Tysq will attack you no matter what you do?</b></i></td>              
+              <td><select id="pAttack">
+              <option value="0" selected="selected">- Answer me! -</option>              
+              <option value="5">Very unlikely</option>              
+              <option value="4">Unlikely</option>              
+              <option value="3">Fifty-fifty</option>              
+              <option value="2">Likely</option>              
+              <option value="1">Very likely</option>              
+</select>
+  </td>
+    </tr>              
+<tr>
+<td><i><b>How do you estimate the price of surrender, in present
+      circumstances? </b></i></td>               
+              <td><select id="hLoss">
+              <option value="0" selected="selected">- Answer me! -</option>              
+              <option value="1">Negligible</option>              
+              <option value="2">Low</option>              
+              <option value="3">Just right</option>              
+              <option value="4">High</option>              
+              <option value="5">Exorbitant</option>              
+</select>
+  </td>
+    </tr>              
+<tr>              <td colspan="2"><input type="submit"
+              value="These are our answers, o Oracle" /><br />               
+</table>              
+</form>              
+
+
+              <h1>              <p id="oracle"></p>              </h1>              
+
+
+<script>
+function estim() {
+var x, y, answer;
+
+// Get the values of the input fields with id="pAttack" and id="hLoss"
+x = document.getElementById("pAttack").value;
+y = document.getElementById("hLoss").value;
+
+// If x or y is zero
+if ( x == 0 || y == 0) {
+      answer = "No cheating, or I'll have you thrown to the lions!";
+      } else {
+      if (y < x) {
+       answer = "Accept the ultimatum.";
+       } else {
+       if (x < y) {
+        answer = "Reject the ultimatum.";
+        } else {
+        answer = "Tricky... follow your instincts.";
+        }
+       }
+      }
+        document.getElementById("oracle").innerHTML = answer;
+}
+</script>              
+
+<hr>
+<p>
+<font size="3">
+The oracle, as you might have guessed, applies some simple game theory. <a href="oracle.pdf">Here</a> is more on that.</font></p>
+<hr>

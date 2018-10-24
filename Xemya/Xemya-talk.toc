@@ -1,0 +1,4 @@
+\select@language {british}
+\beamer@sectionintoc {1}{The story}{2}{0}{1}
+\beamer@sectionintoc {2}{A minimum of game theory}{4}{0}{2}
+\beamer@sectionintoc {3}{Choice of strategy}{10}{0}{3}

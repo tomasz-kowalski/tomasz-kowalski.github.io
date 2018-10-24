@@ -1,0 +1,61 @@
+
+
+<form name="estimate" action="" onsubmit="estim(); return false">
+There is the usual fuss at the beginning. Oracles have to live, too, so a little donation is always welcome, but then the oracle accepts the enquiry and falls into trance. 
+She emerges with two questions:
+              <p>              <table class="form">
+              <tr>
+                <td><i><b>How likely do you think it is that Tysq will attack you no matter what you do?</b></i></td>              
+              <td><select id="pAttack">
+              <option value="0" selected="selected">- Answer me! -</option>              
+              <option value="5">Very unlikely</option>              
+              <option value="4">Unlikely</option>              
+              <option value="3">Fifty-fifty</option>              
+              <option value="2">Likely</option>              
+              <option value="1">Very likely</option>              
+</select>
+</td>              </tr>              
+              <tr>
+                <td><i><b>How do you estimate the price of surrender, in present circumstances? </b></i></td>              
+              <td><select id="hLoss">
+              <option value="0" selected="selected">- Answer me! -</option>              
+              <option value="1">Negligible</option>              
+              <option value="2">Low</option>              
+              <option value="3">Just right</option>              
+              <option value="4">High</option>              
+              <option value="5">Exorbitant</option>              
+</select>
+</td>              </tr>              
+              <tr>              <td colspan="2"><input type="submit" value="These are our answers, o Oracle" /><br />              
+</table>              
+</form>              
+
+
+              <h1>              <p id="oracle"></p>              </h1>              
+
+
+              <script>
+function estim() {
+var x, y, answer;
+
+// Get the values of the input fields with id="pAttack" and id="hLoss"
+x = document.getElementById("pAttack").value;
+y = document.getElementById("hLoss").value;
+
+// If x or y is zero
+if ( x == 0 || y == 0) {
+      answer = "No cheating, or I'll have you thrown to the lions!";
+      } else {
+      if (y < x) {
+       answer = "Accept the ultimatum.";
+       } else {
+       if (x < y) {
+        answer = "Reject the ultimatum.";
+        } else {
+        answer = "Tricky... follow your instincts.";
+        }
+       }
+      }
+        document.getElementById("oracle").innerHTML = answer;
+}
+</script>              
